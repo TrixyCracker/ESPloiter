@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <center>
+        <div class="min_navbar">
+            <a class="min_navbar_button left" href="./index.html">HOME</a>
+            <a class="min_navbar_button left" href="./settings.html">SETTINGS</a>
+            <a class="min_navbar_button right" href="./help.html">HELP & INFO</a>
+        </div>
+        <div class="min_div">
+
+            <p class="min_text">Script:</p>
+            <br>
+            <textarea class="min_textarea" id="script_area" cols="40" rows="15"></textarea>
+            <br>
+            <p class="min_text" style="font-size: 12pt;" id="char_counter">SOS</p>
+            <p class="min_text" style="font-size: 12pt;" id="line_counter">SOS</p>
+
+            <br><br>
+
+            <a class="min_button" onclick="save_script()">
+                SAVE
+            </a>
+            <a class="min_button" onclick="download_script()">
+                DOWNLOAD
+            </a>
+            <a class="min_button" onclick="send_script()">
+                SEND
+            </a>
+
+
+            <input type="checkbox" id="caps_check">
+            <label for="caps_check">CAPSLOCK activated?</label>
+            <br><br>
+
+            <p class="min_text">SCRIPT LIST</p>
+            <br>
+            <div id="script_list"></div>
+            <a class="min_button" onclick="setup_scriptlist()">REFRESH</a>
+        
+        </div>
+        <!--<div class="min_div" style="width: 50%;">
+            <p class="min_text">LEGENDA</p>
+            <br><br>
+            <p class="min_text left">STRING <string>: write phrase</p>
+            <br><br>
+            <p class="min_text left">DELAY <time>: delay a time before go to next script line</p>
+            <br><br>
+            <p class="min_text left">DEFAULT_DELAY <value> or DEFAULTDELAY <value>: set a value of default delay, if value is not set, the controller wait default delay setted in the past</p>
+            <br><br>
+        </div>
+        </center>-->
+    </body>
+    <script>init()</script>
+</html>

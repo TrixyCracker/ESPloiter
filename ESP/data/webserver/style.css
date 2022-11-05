@@ -1,0 +1,171 @@
+
+body
+{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: sans-serif;
+}
+
+div
+{
+    color: whitesmoke;
+    margin: 10px;
+}
+
+div.min_navbar
+{
+    border: 3px solid #004d7a;
+    border-radius: 10px;
+
+    display: inline-block;
+
+    overflow: hidden;
+
+    width: 90%;
+}
+
+a.min_navbar_button
+{
+    cursor: default;
+    overflow: hidden;
+    float: left;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.min_navbar_button.left
+{
+    background-color: #051937;
+    border-right: 3px solid #004d7a;
+    color: whitesmoke;
+    float: left;
+}
+
+a.min_navbar_button.right
+{
+    border-right: 0;
+    border-left: 3px solid #004d7a;
+    background-color: #A8EB12;
+    color: black;
+    float: right;
+}
+
+a.min_navbar_button:hover
+{
+    animation: ani_2 2s infinite;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+textarea.min_textarea
+{
+    background-color: #323232;
+    color:whitesmoke;
+    display: inline-block;
+    font-size: 24PX;
+    margin: 5px;
+    overflow: scroll;
+    resize: none;
+    width: 90%;
+
+    scrollbar-color: #00a4b3;
+
+    border-style: none;
+        border-color: Transparent;
+        outline: none;
+}
+
+a.min_button
+{
+    background-color: #00a4b3;
+    border-radius: 15px;
+    cursor: default;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    vertical-align: middle;
+    align-items: center;
+}
+
+a.min_button:hover
+{
+    animation: ani_2 2s infinite;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+a.min_button_left
+{
+    border: 2px solid whitesmoke;
+    border-right: 0px;
+    border-radius: 15px 0 0 15px;
+    background-color: #00a4b3;
+    cursor: default;
+    display: inline-block;
+    margin: 5px;
+    margin-right: 0px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+a.min_button_left:hover
+{
+    animation: ani_2 2s infinite;
+    cursor: pointer;
+}
+
+a.min_button_right
+{
+    border: 2px solid whitesmoke;
+    border-radius: 0 15px 15px 0;
+    background-color: #00a4b3;
+    cursor: default;
+    display: inline-block;
+    margin: 5px;
+    margin-left: 0px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+a.min_button_right:hover
+{
+    animation: ani_2 2s infinite;
+    cursor: pointer;
+}
+
+p.min_text 
+{
+    display: inline-block;
+    font-size: 25pt;
+    margin: 5px;
+    text-transform: uppercase;
+}
+p.min_text.left
+{
+    float:left;
+}
+
+div.min_div
+{
+    border: 3px #004d7a solid;
+    box-shadow: 5px 5px 15px 2px #000000;
+
+    overflow: hidden;
+
+    width: 80%;
+}
+
+@keyframes button1 {
+    0% {background-color: #323232;}
+    50% {background-color: whitesmoke;}
+    100% {background-color: #323232;}
+    0% {color: whitesmoke;}
+    50% {color: #323232;}
+    100% {color: whitesmoke;}
+}
+
+@keyframes ani_2 {
+    50% {background-color: black;}
+    50% {color: white;}
+}
